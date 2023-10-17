@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useDebounce } from "usehooks-ts";
+import "./searchLocation.css"
 
 import {
   CityInterface,
@@ -34,13 +35,15 @@ export const SearchLocation = () => {
   }, [searchStateDebaunse]);
 
   return (
-    <div>
+    <div className="cities">
+      <h2>Введите свой город:</h2>
+      <input type="text" onChange={handleInputChange} />
+      <h2>Выбранный город:</h2>
       <p>
         {selectedCity.name}, {selectedCity.country}
       </p>
-
+      <h2>Дата и время:</h2>
       <Clock />
-      <input type="text" onChange={handleInputChange} />
     </div>
   );
 };

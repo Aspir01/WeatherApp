@@ -40,10 +40,10 @@ export const Clock = () => {
 
   return (
     <div>
-      <p> {convertedTime}</p>
       <p>
         {weekDay[convertedWeekDay]}, {convertedDate} {months[convertedMonth]}{" "}
       </p>
+      <p> {convertedTime}</p>
     </div>
   );
 };

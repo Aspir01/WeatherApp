@@ -48,7 +48,7 @@ export const TodaysHightlights = () => {
 
   return (
     <TodaysHightlightsContainer>
-      <h1>{"Today's hilights"}</h1>
+      <h1>{"Основная информация"}</h1>
       {loading ? (
         <p>Loading...</p>
       ) : error ? (
@@ -58,15 +58,15 @@ export const TodaysHightlights = () => {
           <div>
             <SunTimeDiv>
               <TodaysHightlightsIcon src="assets/sunriseTH.png" alt="sunrise" />
-              <SunTimeInfo>
-                <h5>Sunrise</h5>
+              <SunTimeInfo >
+                <h5>Восход</h5>
                 <h5>{todaysHighlights?.sunriseTime}</h5>
               </SunTimeInfo>
             </SunTimeDiv>
             <SunTimeDiv>
               <TodaysHightlightsIcon src="assets/sunsetTH.png" alt="sunset" />
               <SunTimeInfo>
-                <h5>Sunset</h5>
+                <h5>Закат</h5>
                 <h5>{todaysHighlights?.sunsetTime}</h5>
               </SunTimeInfo>
             </SunTimeDiv>
@@ -82,13 +82,13 @@ export const TodaysHightlights = () => {
                   alt="humidity"
                 />
                 <h5>{todaysHighlights?.humidity}%</h5>
-                <h5>Humidity</h5>
+                <h5>Влажность</h5>
               </WeatherDetailsDiv>
               <WeatherDetailsDiv>
                 {" "}
                 <WeatherDetailsIcon src="assets/windTH.png" alt="pressure" />
-                <h5>{todaysHighlights?.windSpeed}km/h</h5>
-                <h5>Wind Speed</h5>
+                <h5>{todaysHighlights?.windSpeed}км/ч</h5>
+                <h5>Скорость ветра</h5>
               </WeatherDetailsDiv>
             </CoupleWeatherDetailsDiv>
             <CoupleWeatherDetailsDiv>
@@ -98,9 +98,9 @@ export const TodaysHightlights = () => {
                   alt="pressure"
                 />
                 <h5>{todaysHighlights?.pressure}hPa</h5>
-                <h5>Pressure</h5>
+                <h5>Давление</h5>
               </WeatherDetailsDiv>
-              <WeatherDetailsDiv>
+              <WeatherDetailsDiv style={{ marginLeft: "32px" }}>
                 <WeatherDetailsIcon src="assets/uvTH.png" alt="pressure" />
                 <h5>{todaysHighlights?.uvIndex}</h5>
                 <h5>UV</h5>

@@ -46,10 +46,10 @@ export const HourlyForecast = () => {
 
   return (
     <HourlyForecastDiv>
-      <h1>Hourly forecast</h1>
+      <h1>Почасовой прогноз</h1>
       <HourlyContainer>
         {loading ? (
-          <p>Loading...</p>
+          <p>Загрузка...</p>
         ) : error ? (
           <p>Error: {error}</p>
         ) : (
@@ -73,7 +73,7 @@ export const HourlyForecast = () => {
                 ></WindDirectionImg>
                 <h4>{getWindDirection(item.windDirection).direction}</h4>
               </WindDirectionDiv>
-              <h4> {item.windGusts} km/h</h4>
+              <h4> {item.windGusts} км/ч</h4>
             </HourContainer>
           ))
         )}
