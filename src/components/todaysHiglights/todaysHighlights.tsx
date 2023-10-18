@@ -47,7 +47,7 @@ export const TodaysHightlights = () => {
   }, [selectedCity]);
 
   return (
-    <TodaysHightlightsContainer className="today">
+    <TodaysHightlightsContainer className="today Q">
       <h1>{"Основная информация"}</h1>
       {loading ? (
         <p>Loading...</p>
@@ -55,7 +55,7 @@ export const TodaysHightlights = () => {
         <p>Error: {error}</p>
       ) : (
         <TodaysHightlightSet className="today">
-          <div>
+          <div className="suns">
             <SunTimeDiv>
               <TodaysHightlightsIcon src="assets/sunriseTH.png" alt="sunrise" />
               <SunTimeInfo >
@@ -74,8 +74,8 @@ export const TodaysHightlights = () => {
           <TemmperatureDiv>
             <h3>{todaysHighlights?.temperature}°C</h3>
           </TemmperatureDiv>
-          <WeatherDetailsSet>
-            <CoupleWeatherDetailsDiv>
+          <WeatherDetailsSet className="weather-detail">
+            <CoupleWeatherDetailsDiv className="weather-detail">
               <WeatherDetailsDiv>
                 <WeatherDetailsIcon
                   src="assets/humidityTH.png"

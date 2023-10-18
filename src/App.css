@@ -40,10 +40,6 @@
 
 @media (max-width: 900px) {
 
-  .App {
-    height: 100% !important;
-  }
-
   .info {
     margin: 0 !important;
     justify-content: space-between !important;
@@ -72,5 +68,26 @@
 
   .today {
     flex-direction: column;
+  }
+
+  .today {
+    height: 1300px !important;
+    padding-bottom: 30px;
+  }
+
+  .mainn {
+    height: 100% !important;
+    padding: 10px 0;
+  }
+
+  .suns {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .weather-detail {
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
   }
 }

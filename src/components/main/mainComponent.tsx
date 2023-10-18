@@ -5,7 +5,7 @@ import { MainContainer } from "./mainComponent.Styled";
 
 export const Main = () => {
   return (
-    <MainContainer>
+    <MainContainer className="mainn">
       <div>
         <SearchLocation />
         <div className="info">
