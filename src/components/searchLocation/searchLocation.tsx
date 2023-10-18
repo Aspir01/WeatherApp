@@ -36,7 +36,7 @@ export const SearchLocation = () => {
 
   return (
     <div className="cities">
-      <h2>Введите свой город:</h2>
+      <h2>Введите название города, на английском языке:</h2>
       <input type="text" onChange={handleInputChange} />
       <h2>Выбранный город:</h2>
       <p>
