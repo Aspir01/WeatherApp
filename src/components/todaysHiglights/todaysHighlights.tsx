@@ -47,14 +47,14 @@ export const TodaysHightlights = () => {
   }, [selectedCity]);
 
   return (
-    <TodaysHightlightsContainer>
+    <TodaysHightlightsContainer className="today">
       <h1>{"Основная информация"}</h1>
       {loading ? (
         <p>Loading...</p>
       ) : error ? (
         <p>Error: {error}</p>
       ) : (
-        <TodaysHightlightSet>
+        <TodaysHightlightSet className="today">
           <div>
             <SunTimeDiv>
               <TodaysHightlightsIcon src="assets/sunriseTH.png" alt="sunrise" />

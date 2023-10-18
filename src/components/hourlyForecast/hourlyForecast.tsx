@@ -45,22 +45,23 @@ export const HourlyForecast = () => {
   }, [selectedCity]);
 
   return (
-    <HourlyForecastDiv>
+    <HourlyForecastDiv className="hour">
       <h1>Почасовой прогноз</h1>
-      <HourlyContainer>
+      <HourlyContainer className="weather">
         {loading ? (
           <p>Загрузка...</p>
         ) : error ? (
           <p>Error: {error}</p>
         ) : (
           fiveRelevantHours.map((item, index) => (
-            <HourContainer key={index}>
+            <HourContainer key={index} className="hourwidth">
               <h3>{item.time}</h3>
               <Weathercode>
                 <WeathercodeImg
                   weathercode={item.weathercode}
                   src={getImageByWeathercode(item.weathercode)}
                   alt="weathercode_img"
+                  className="weathIcon"
                 ></WeathercodeImg>
               </Weathercode>
 
