@@ -38,6 +38,20 @@
   }
 }
 
+@media (max-width: 1430px) {
+  .info {
+    margin: 0px !important;
+  }
+
+  .mainn {
+    height: 100% !important;
+  }
+
+  .cities div {
+    margin: 0 !important;
+  }
+}
+
 @media (max-width: 900px) {
 
   .info {
@@ -45,6 +59,7 @@
     justify-content: space-between !important;
     flex-direction: column !important;
   }
+
 
   .today {
     width: 400px !important;

@@ -28,7 +28,7 @@ export const HourContainer = styled.div`
   flex-direction: column;
   background: rgba(68, 68, 68, 0.8);
   padding: 10px 20px;
-  margin: 0px 20px;
+  margin: 0px 10px;
   border-radius: 40px;
   height: 270px;
 `;
